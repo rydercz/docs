@@ -36,6 +36,16 @@ Globální instalace:
 
 ### Instalace závislostí projektu
 
+Pokud projekt obsahuje soubor `composer.json` provedu jednoduše instalaci všech zavislostí pomocí příkazu `composer install`, který spustím v terminálu ve stejné složce, jako se nachází soubor `composer.json`.
+
+> Pokud se ve stejné složce nachází také soubor `composer.lock`, provede příkaz `composer install` instalaci závislostí v konkrétních verzích. Proto se hodí, aby byl soubor `composer.lock` součástí repozitáře, díky tomu budou všichni vývojáři, kteří pracují s projektem, používat stejné verze závislostí.
+
+Pro instalaci závislostí při sestavení produkčního balíčku aplikace se hodí příkaz `composer install --optimize-autoloader --no-dev --no-interaction`. V čem se liší proti obyčejnému `composer install`?
+- `--optimize-autoloader` - vytvoří optimalizovaný autoloader vhodný na produkci
+- `--no-dev` - neinstalovat závislosti potřebné pro vývoj - na produkci nejsou potřeba
+- `--no-interaction` - neinteragovat v terminálu - toto se hodí hlavně pokud je build proces projektu automatizovaný
+
+
 ### Aktualizace závislostí projektu
 
 ### Odebírání závislostí
