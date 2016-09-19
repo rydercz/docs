@@ -17,6 +17,7 @@
 ## frontend
 - [jquery](http://api.jquery.com)
 - [bower](https://bower.io) - package manager
+- [CSS coding standards](https://github.com/airbnb/css)
 
 ### css frameworks
 - [Bootstrap](http://getbootstrap.com)
