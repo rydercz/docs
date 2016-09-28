@@ -3,10 +3,14 @@
 ## backend
 - [composer](https://getcomposer.org/doc/)
   - [czech cheat sheet](composer-cheat-sheet-cs.md)
+- [PHP FIG - PSR standards](https://github.com/php-fig)
 
 ### frameworks
 - [Nette](https://doc.nette.org/cs/)
 - [Symfony](https://symfony.com/doc/current/index.html)
+  - [Form Types](https://symfony.com/doc/current/reference/forms/types.html)
+  - [Form Twig](http://symfony.com/doc/current/reference/forms/twig_reference.html)
+  - [User Bundle](https://github.com/FriendsOfSymfony/FOSUserBundle)
 
 ### libraries
 - [doctrine](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/)
