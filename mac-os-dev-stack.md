@@ -12,7 +12,7 @@ Pro instalaci použijeme balíčkovací system [Homebrew](https://brew.sh/).
 
 Úspěšnou instalaci je možné ověřit zavoláním `brew --version`. Pokud je vše v pořádku, měla by se vypsat nainstalovaná verze.
 
-## Instalace dnsmasq
+## Instalace dnsmasq
 
 ```bash
 brew install dnsmasq
