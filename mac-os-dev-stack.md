@@ -12,8 +12,21 @@ Pro instalaci použijeme balíčkovací system [Homebrew](https://brew.sh/).
 
 Úspěšnou instalaci je možné ověřit zavoláním `brew --version`. Pokud je vše v pořádku, měla by se vypsat nainstalovaná verze.
 
-## Instalace dnsmasq
+## Vypnutí Apache v macOS
+Ve výchozí instalaci macOS je nainstalován webový server Apache. Ten se ale moc nehodí pro náš účel a je nejlepší jej vypnout.
+```bash
+sudo apachectl stop
+sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
+```
 
+## Instalace Apache
+```bash
+brew install httpd
+sudo brew services start httpd
+
+```
+
+## Instalace dnsmasq
 ```bash
 brew install dnsmasq
 sudo cp -v $(brew --prefix dnsmasq)/homebrew.mxcl.dnsmasq.plist /Library/LaunchDaemons
